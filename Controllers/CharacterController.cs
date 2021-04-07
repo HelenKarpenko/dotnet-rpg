@@ -1,14 +1,12 @@
-using System.Linq;
 using System.Threading.Tasks;
 using dotnet_rpg.Dtos.Character;
-using dotnet_rpg.Models;
 using dotnet_rpg.Services.CharacterService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_rpg.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]")] 
     public class CharacterController : ControllerBase
     {
         public readonly ICharacterService _characterService;
